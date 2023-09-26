@@ -21,5 +21,15 @@ namespace ysolano_CalcForms
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIgual_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
