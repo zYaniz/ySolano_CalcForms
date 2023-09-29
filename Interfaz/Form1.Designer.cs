@@ -46,7 +46,7 @@
             this.btn1 = new System.Windows.Forms.Button();
             this.btnIgual = new System.Windows.Forms.Button();
             this.btnRestar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnPantalla = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // brnDel
@@ -69,6 +69,7 @@
             this.btnSumar.TabIndex = 1;
             this.btnSumar.Text = "+";
             this.btnSumar.UseVisualStyleBackColor = true;
+            this.btnSumar.Click += new System.EventHandler(this.btnSumar_Click);
             // 
             // btn6
             // 
@@ -79,6 +80,7 @@
             this.btn6.TabIndex = 2;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn4
             // 
@@ -89,6 +91,7 @@
             this.btn4.TabIndex = 3;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn8
             // 
@@ -99,6 +102,7 @@
             this.btn8.TabIndex = 4;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn9
             // 
@@ -109,6 +113,7 @@
             this.btn9.TabIndex = 5;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btn7
             // 
@@ -119,6 +124,7 @@
             this.btn7.TabIndex = 7;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn5
             // 
@@ -129,6 +135,7 @@
             this.btn5.TabIndex = 8;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btnR
             // 
@@ -149,6 +156,7 @@
             this.btnDividir.TabIndex = 10;
             this.btnDividir.Text = "/";
             this.btnDividir.UseVisualStyleBackColor = true;
+            this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
             // 
             // btn3
             // 
@@ -159,6 +167,7 @@
             this.btn3.TabIndex = 11;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn2
             // 
@@ -169,6 +178,7 @@
             this.btn2.TabIndex = 12;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btnMultiplicar
             // 
@@ -179,6 +189,7 @@
             this.btnMultiplicar.TabIndex = 13;
             this.btnMultiplicar.Text = "*";
             this.btnMultiplicar.UseVisualStyleBackColor = true;
+            this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click);
             // 
             // btnOff
             // 
@@ -199,6 +210,7 @@
             this.btn0.TabIndex = 15;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btn1
             // 
@@ -209,6 +221,7 @@
             this.btn1.TabIndex = 16;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btnIgual
             // 
@@ -230,20 +243,25 @@
             this.btnRestar.TabIndex = 18;
             this.btnRestar.Text = "-";
             this.btnRestar.UseVisualStyleBackColor = true;
+            this.btnRestar.Click += new System.EventHandler(this.btnRestar_Click);
             // 
-            // textBox1
+            // btnPantalla
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(274, 20);
-            this.textBox1.TabIndex = 19;
+            this.btnPantalla.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPantalla.Location = new System.Drawing.Point(16, 19);
+            this.btnPantalla.Name = "btnPantalla";
+            this.btnPantalla.ReadOnly = true;
+            this.btnPantalla.Size = new System.Drawing.Size(274, 35);
+            this.btnPantalla.TabIndex = 19;
+            this.btnPantalla.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnPantalla.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(310, 345);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnPantalla);
             this.Controls.Add(this.btnRestar);
             this.Controls.Add(this.btnIgual);
             this.Controls.Add(this.btn1);
@@ -290,7 +308,7 @@
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btnIgual;
         private System.Windows.Forms.Button btnRestar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox btnPantalla;
     }
 }
 
