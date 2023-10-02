@@ -28,9 +28,11 @@ namespace ysolano_CalcForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            btnPantalla.Clear();
+            if (btnPantalla.Text.Length == 1)
+                btnPantalla.Text = "";
+            else
+                btnPantalla.Text = btnPantalla.Text.Substring(0, btnPantalla.Text.Length - 1);
         }
-
         private void btnIgual_Click(object sender, EventArgs e)
         {
             segundo = int.Parse(btnPantalla.Text);
@@ -140,6 +142,11 @@ namespace ysolano_CalcForms
         {
             ope = "/";
             primero = int.Parse(btnPantalla.Text);
+            btnPantalla.Clear();
+        }
+
+        private void btnR_Click(object sender, EventArgs e)
+        {
             btnPantalla.Clear();
         }
     }
